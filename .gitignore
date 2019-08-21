@@ -1,0 +1,5 @@
+# Do not track content in these folders
+sierra_config/
+
+# Do not track credentials file
+creds.json
