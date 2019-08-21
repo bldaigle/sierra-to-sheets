@@ -1,0 +1,7 @@
+gspread
+time
+oauthclient2
+psycopg2
+sys
+pprint
+googleapiclient.discovery
