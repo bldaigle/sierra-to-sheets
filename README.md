@@ -1,6 +1,8 @@
 # kenyon_openOrders
 An integration between the Google Sheets API and the Sierra library system that automates the creation and delivery of open library orders.
 
+![Sierra-Google Integration Image](http://bendaigle.ohio5.org/custom/media/sierra-google.jpg)
+
 ## Project Components
 This project consists of the following structural components:
 * Automation server (just an AWS micro-instance for hosting scripts)
