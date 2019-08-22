@@ -137,7 +137,7 @@ emailmessage = '''
     </html>
 '''
 emailfrom = sierra_config.email_from
-emailto = ['bldaigle@owu.edu']
+emailto = ['email_recipient.1@sample.edu','email_recipient2@sample.edu']
 
 # Create the email message
 msg = MIMEMultipart('alternative')
