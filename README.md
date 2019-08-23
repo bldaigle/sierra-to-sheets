@@ -1,5 +1,5 @@
 # sierra-to-sheets
-An integration between the Google Sheets API and the Sierra library system that automates the creation and delivery of open library orders.
+An integration between the Google Sheets API and the Sierra library system that automates the creation and delivery of reports.
 
 ![Sierra-Google Integration Image](http://bendaigle.ohio5.org/custom/media/sierra-google.jpg)
 
