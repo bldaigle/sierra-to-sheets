@@ -1,3 +1,7 @@
+# /usr/bin/env python3
+# Author: Ben Daigle
+# Date: August 23, 2019
+
 import gspread # suite of tools for working with Google Sheets
 import psycopg2 # for connecting to the Sierra PostgreSQL database
 import pytz # for handling timezones
