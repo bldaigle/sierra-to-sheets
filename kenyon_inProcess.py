@@ -176,6 +176,7 @@ emailmessage = '''
                                         </tr>
                                     </tbody>
                                 </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
