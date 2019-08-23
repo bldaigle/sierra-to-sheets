@@ -3,8 +3,8 @@ SELECT
 	CONCAT(bib_view.record_type_code, bib_view.record_num, 'a') AS "Bib Record Number",
 	bib_record_property.best_title AS "Title",
 	order_record.vendor_record_code AS "Vendor",
-	TO_CHAR(record_metadata.creation_date_gmt, 'YYYY-MM-DD') AS "Created Date",
-	TO_CHAR(record_metadata.record_last_updated_gmt, 'YYYY-MM-DD') AS "Updated Date"
+	TO_CHAR(record_metadata.creation_date_gmt, 'YYYY-MM-DD') AS "Date Created",
+	TO_CHAR(record_metadata.record_last_updated_gmt, 'YYYY-MM-DD') AS "Date Updated"
 FROM
 	sierra_view.order_record
 INNER JOIN
@@ -21,5 +21,5 @@ WHERE
 	order_record.accounting_unit_code_num = 2 AND
 	order_record.order_status_code = 'o'
 ORDER BY
-	order_view.record_num ASC
+	"Date Updated" ASC
 LIMIT 1000;

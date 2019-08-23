@@ -130,9 +130,39 @@ emailmessage = '''
     <html>
         <head></head>
         <body>
-            <p>Hello!</p>
-            <p>A report of current open library orders for Kenyon has been posted to the <a href="https://drive.google.com/drive/u/2/folders/1LPHaG147zoha1s3BsMcC0-epuQEdwuZm">Kenyon Open Orders</a> shared drive. Have a look and let us know if you have any questions about the report.</p>
-            <p>Thanks!</p>
+        <div style="width: 100%!important;margin:0;padding:0;">
+            <div style="padding:10px;line-height:18px;font-family:'Lucida Grande',Verdana,Arial,sans-serif;font-size:12px;color:#444444;">
+                <div style="margin-top:25px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" width="100%" style="padding:15px 0;border-top:1px dotted #c5c5c5">
+                                    <tbody>
+                                        <tr>
+                                        
+                                            <td valign="top" style="padding:0 15px 0 15px;width:40px">
+                                                <img width="40" height="40" alt="Five Colleges of Ohio Logo" style="height:auto;line-height:100%;outline:none;text-decoration:none;border-radius:5px" src="https://www.ohio5.org/sites/default/files/oh5-logo-sm_1.jpg">
+                                            </td>
+                                            <td width="100%" style="padding:0;margin:0;" valign="top">
+                                                <p style="font-family:'Lucida Grande','lucida Sans Unicode','Lucida Sans',Verdana,Tahoma,sans-serif;font-size:15px;line-height:18px;margin-bottom:0;margin-top:0;padding:0;color:#1b1d1e">
+                                                    <strong>CONSORT Library Admin</strong>
+                                                </p>
+                                                <p>''' + ohio_now + '''</p>
+                                                <div style="color:#2b2e2f;font-family:'Lucida Sans Unicode','Lucida Grande','Tahoma',Verdana,sans-serif;font-size:14px;line-height:22px;margin:15px 0;">
+                                                    <p>Hello there!</p>
+                                                    <p>A report of current open library orders for Kenyon has been posted to the <a href="https://drive.google.com/drive/u/2/folders/1LPHaG147zoha1s3BsMcC0-epuQEdwuZm">Kenyon College Reports</a> shared drive. Have a look and let us know if you have any questions about the report.</p>
+                                                    <p>Thanks!</p>
+                                                    <p>Ben Daigle & Matt McNemar</p>
+                                                </div
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         </body>
     </html>
 '''
