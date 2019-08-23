@@ -5,7 +5,7 @@ An integration between the Google Sheets API and the Sierra library system that 
 
 ## Project Components
 This project consists of the following components:
-* Automation server (just an AWS micro-instance for hosting scripts)
+* Automation server (an AWS micro-instance for hosting scripts but this could just as easily done on a a local machine)
 * Sierra PostgreSQL Database
 * Google Sheets API
 * Google Shared Drive
@@ -13,13 +13,13 @@ This project consists of the following components:
 ### Automation Server
 All files are hosted on a t2.micro instance in Amazon Web Services (AWS). These include:
 * `sierra_config.txt` - A restricted file that contains sensitive login information. Permissions on this file are set to 0400
-* `kenyon_open_orders.sql` - A PostgreSQL query for extracting data from the Sierra database
-* `kenyon_openOrders.py` - A Python program that fetches data from the Sierra database and posts it to a shared Google Sheet
+* `query.sql` - A PostgreSQL query for extracting data from the Sierra database. We are using multiple scripts so the names of these queries vary depending on the task
+* `script.py` - A Python program that fetches data from the Sierra database and posts it to a shared Google Sheet. Again, there are multiple scripts for different tasks so the names of the files will vary.
 * `creds.json` - A restricted file that contains Google API credentials
-A cron job executes the Python program every week on Monday at 8:00 AM ET
+For scheduling, a cron job executes the Python program every week on Monday at 8:00 AM ET
 
 ### Sierra PostgreSQL Database
-The Sierra product offers direct access to its underlying PostgreSQL database. The `kenyon_open_orders.sql` file contains the query used to extract data about open library orders. The tables and database UML diagrams are documented but are proprietary and therefore behind an authentication wall for customers only.
+The Sierra product offers direct access to its underlying PostgreSQL database. The `query.sql` file contains the query used to extract data about open library orders. The tables and database UML diagrams are documented but are proprietary and therefore behind an authentication wall for customers only.
 
 ### Google Sheets API
 This project uses Google Sheets API v4 which is well documented at on the [Google Sheets API Reference](https://developers.google.com/sheets/api/).
