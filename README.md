@@ -5,7 +5,7 @@ An integration between the Google Sheets API and the Sierra library system that 
 
 ## Project Components
 This project consists of the following components:
-* Automation server (an AWS micro-instance for hosting scripts but this could just as easily done on a a local machine)
+* Automation server (an AWS micro-instance for hosting and executing scripts)
 * Sierra PostgreSQL Database
 * Google Sheets API
 * Google Shared Drive
@@ -13,7 +13,7 @@ This project consists of the following components:
 ### Automation Server
 All files are hosted on a t2.micro instance in Amazon Web Services (AWS). These include:
 * `sierra_config.txt` - A restricted file that contains sensitive login information. Permissions on this file are set to 0400
-* `query.sql` - A PostgreSQL query for extracting data from the Sierra database. We are using multiple scripts so the names of these queries vary depending on the task
+* `query.sql` - A PostgreSQL query for extracting data from the Sierra database. This project includes multiple scripts so the names of these queries vary depending on the task.
 * `script.py` - A Python program that fetches data from the Sierra database and posts it to a shared Google Sheet. Again, there are multiple scripts for different tasks so the names of the files will vary.
 * `creds.json` - A restricted file that contains Google API credentials
 For scheduling, a cron job executes the Python program every week on Monday at 8:00 AM ET
